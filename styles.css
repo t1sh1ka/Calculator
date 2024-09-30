@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.symbol {
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.2;
+    animation: bounce 8s infinite linear;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(100vw, 100vh);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Add random positions and animation durations for each symbol */
+.symbol:nth-child(1) { left: 10%; top: 10%; animation-duration: 13s; }
+.symbol:nth-child(2) { left: 20%; top: 15%; animation-duration: 14s; }
+.symbol:nth-child(3) { left: 10%; top: 10%; animation-duration: 11s; }
+.symbol:nth-child(4) { left: 20%; top: 20%; animation-duration: 12s; }
+.symbol:nth-child(5) { left: 30%; top: 20%; animation-duration: 15s; }
+.symbol:nth-child(6) { left: 10%; top: 10%; animation-duration: 11s; }
+.symbol:nth-child(7) { left: 20%; top: 10%; animation-duration: 12s; }
+.symbol:nth-child(8) { left: 30%; top: 20%; animation-duration: 9s; }
+.symbol:nth-child(9) { left: 25%; top: 70%; animation-duration: 7s; }
+.symbol:nth-child(10) { left: 55%; top: 90%; animation-duration: 8s; }
+.symbol:nth-child(11) { left: 35%; top: 50%; animation-duration: 11s; }
+.symbol:nth-child(12) { left: 75%; top: 40%; animation-duration: 9s; }
+.symbol:nth-child(13) { left: 25%; top: 90%; animation-duration: 10s; }
+.symbol:nth-child(14) { left: 65%; top: 80%; animation-duration: 8s; }
+.symbol:nth-child(15) { left: 45%; top: 90%; animation-duration: 13s; }
+.symbol:nth-child(16) { left: 85%; top: 30%; animation-duration: 12s; }
+
+.symbol1 {
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.2;
+    animation: bouncea 8s infinite linear;
+}
+
+@keyframes bouncea {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(100vw, 100vh);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Add random positions and animation durations for each symbol */
+.symbol1:nth-child(1):nth-child(1) { right: 10%; bottom: 10%; animation-duration: 13s; }
+.symbol1:nth-child(2) { right: 20%; bottom: 15%; animation-duration: 14s; }
+.symbol1:nth-child(3) { right: 10%; bottom: 10%; animation-duration: 11s; }
+.symbol1:nth-child(4) { right: 20%; bottom: 20%; animation-duration: 12s; }
+.symbol1:nth-child(5) { right: 30%; bottom: 20%; animation-duration: 15s; }
+.symbol1:nth-child(6) { right: 10%; bottom: 10%; animation-duration: 11s; }
+.symbol1:nth-child(7) { right: 20%; bottom: 10%; animation-duration: 12s; }
+.symbol1:nth-child(8) { right: 30%; bottom: 20%; animation-duration: 9s; }
+.symbol1:nth-child(9) { right: 25%; bottom: 70%; animation-duration: 7s; }
+.symbol1:nth-child(10) { right: 55%; bottom: 90%; animation-duration: 8s; }
+.symbol1:nth-child(11) { right: 35%; bottom: 50%; animation-duration: 11s; }
+.symbol1:nth-child(12) { right: 75%; bottom: 40%; animation-duration: 9s; }
+.symbol1:nth-child(13) { right: 25%; bottom: 90%; animation-duration: 10s; }
+.symbol1:nth-child(14) { right: 65%; bottom: 80%; animation-duration: 8s; }
+.symbol1:nth-child(15) { right: 45%; bottom: 90%; animation-duration: 13s; }
+.symbol1:nth-child(16) { right: 85%; bottom: 30%; animation-duration: 12s; }
+
+.calculator {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    position: relative;
+}
+
+#display {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
